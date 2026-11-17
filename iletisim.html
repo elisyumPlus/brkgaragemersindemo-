@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.pexels.com; media-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="BRK Garage Mersin iletişim bilgileri, konum, telefon ve WhatsApp üzerinden randevu talebi.">
+  <title>İletişim ve Randevu | BRK Garage Mersin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="BRK Garage ana sayfa"><img class="brand-logo" src="assets/brk-logo.png" alt="BRK Garage Detailing"></a>
+    <nav id="site-nav" aria-label="Ana menü">
+      <a href="index.html">Ana sayfa</a><a href="hizmetler.html">Hizmetler</a><a href="galeri.html">Galeri</a><a href="hakkimizda.html">Hakkımızda</a><a href="sik-sorulanlar.html">Sık sorulanlar</a>
+      <a href="bilgilendirme.html">Bilgilendirme</a>
+      <a href="iletisim.html" aria-current="page">İletişim</a>
+    </nav>
+    <a class="top-call" href="tel:+905441723633"><span class="call-icon" aria-hidden="true">↗</span> 0544 172 36 33</a>
+    <button class="menu-toggle" aria-label="Menüyü aç" aria-controls="site-nav" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main>
+    <section class="mp-page-hero">
+      <p class="section-kicker">BRK GARAGE · YENİŞEHİR, MERSİN</p>
+      <h1>İletişim ve<br><em>randevu talebi.</em></h1>
+      <p>Hizmetler hakkında bilgi almak veya randevu zamanını konuşmak için bizi arayın ya da WhatsApp’tan yazın.</p>
+      <div class="mp-contact-actions">
+        <a class="button button-lime" href="tel:+905441723633">0544 172 36 33 <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="https://wa.me/905441723633" target="_blank" rel="noopener noreferrer">WhatsApp’tan yazın <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="mp-contact-layout">
+      <div class="mp-contact-info">
+        <p class="section-kicker">BİZE ULAŞIN</p>
+        <article><span>TELEFON</span><h3><a href="tel:+905441723633">+90 544 172 36 33</a></h3><p>Aramak için telefon numarasına dokunun.</p></article>
+        <article><span>ADRES</span><h3>Çiftlikköy Mahallesi,<br>Mimar Sinan Caddesi,<br>Leyla Şimşek Apt. No: 6/G<br>33110 Yenişehir / Mersin</h3><a href="https://www.google.com/maps/search/?api=1&amp;query=BRK+Garage+Detailing+Leyla+Simsek+Apt+6%2FG+Mersin" target="_blank" rel="noopener noreferrer">Yol tarifi alın <span aria-hidden="true">↗</span></a></article>
+        <article><span>INSTAGRAM</span><h3>@brkgarage_mersin</h3><a href="https://www.instagram.com/brkgarage_mersin/" target="_blank" rel="noopener noreferrer">Instagram profilini açın <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <form class="mp-contact-form" id="contact-form">
+        <p class="section-kicker">WHATSAPP ÜZERİNDEN İLETİN</p>
+        <h2>Randevu talebinizi<br><em>hazırlayın.</em></h2>
+        <p>Bilgileri ekleyin; WhatsApp’ta gönderilmeye hazır bir mesaj açılsın.</p>
+        <label>Adınız<input name="name" autocomplete="name" required placeholder="Ad soyad"></label>
+        <label>Araç marka ve model<input name="vehicle" autocomplete="off" placeholder="Örn. Toyota Corolla"></label>
+        <label>İlgilendiğiniz hizmet
+          <select name="service"><option value="">Hizmet seçin</option><option>Oto yıkama</option><option>Buharlı detaylı temizlik</option><option>Cam filmi</option><option>PPF boya koruma</option><option>Seramik kaplama</option><option>Pasta cila</option><option>Koltuk temizliği</option><option>Motor temizliği</option><option>Diğer</option></select>
+        </label>
+        <label>Tercih ettiğiniz tarih<input type="date" name="date"></label>
+        <label>Tercih ettiğiniz zaman
+          <select name="time"><option value="">Zaman seçin</option><option>Sabah</option><option>Öğle</option><option>Akşamüstü</option></select>
+        </label>
+        <label>Eklemek istediğiniz not<textarea name="note" rows="3" placeholder="Aracınız veya talebiniz hakkında kısa bilgi"></textarea></label>
+        <button class="button button-lime" type="submit">WhatsApp mesajı oluşturun <span aria-hidden="true">↗</span></button>
+        <small>Mesaj WhatsApp’ta açılır. Göndermeden önce bilgileri kontrol edebilirsiniz.</small>
+      </form>
+    </section>
+    <section class="mp-map" aria-label="BRK Garage haritası"><iframe title="BRK Garage Mersin konumu" src="https://www.google.com/maps?q=BRK+Garage+Detailing+Leyla+Simsek+Apt+6G+Mersin&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+  </main>
+  <footer class="mp-footer"><a class="brand" href="index.html"><img class="brand-logo" src="assets/brk-logo.png" alt="BRK Garage Detailing"></a><span>© <span class="year"></span> BRK GARAGE · MERSİN</span><a href="https://www.instagram.com/brkgarage_mersin/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="index.html">ANA SAYFA ↑</a></footer>
+  <div class="mobile-contact-bar" role="group" aria-label="Hızlı iletişim"><a href="tel:+905441723633" aria-label="Telefonla arayın"><span aria-hidden="true">☎</span><small>Ara</small></a><a class="mobile-contact-whatsapp" href="https://wa.me/905441723633" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden yazın"><span aria-hidden="true">↗</span><small>WhatsApp</small></a><a href="iletisim.html" aria-label="Randevu ve iletişim sayfası"><span aria-hidden="true">＋</span><small>Randevu</small></a></div>
+  <script src="script.js"></script>
+</body>
+</html>
